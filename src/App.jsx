@@ -38,7 +38,7 @@ function App() {
     });
 
     return () => unsubscribe();
-  }, [setUser]);
+  }, [auth]);
 
 
   useEffect(() => {
