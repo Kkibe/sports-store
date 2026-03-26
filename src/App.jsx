@@ -20,7 +20,7 @@ import ProtectedRoute from './utils/ProtectedRoute';
 import ProtectedAuthRoute from './utils/ProtectedAuthRoute';
 import Notification from './components/Notification/Notification';
 import Products from './components/Products/Products';
-import Payment from './pages/Pay/Payment';
+import Payment2 from './pages/Pay/Payment2';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -64,7 +64,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="store" element={<Products />} />
-            <Route path="pay" element={<ProtectedRoute><Payment /></ProtectedRoute>} />
+            <Route path="pay" element={<ProtectedRoute><Payment2 /></ProtectedRoute>} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="login" element={<ProtectedAuthRoute><Login /></ProtectedAuthRoute>} />
