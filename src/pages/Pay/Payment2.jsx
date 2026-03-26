@@ -477,7 +477,7 @@ export default function Payment2() {
             />
             <label htmlFor="mpesa">📲 Mobile Payment (M-Pesa/Card)</label>
           </fieldset>
-          <fieldset>
+          {/*<fieldset>
             <input 
               name="payment-method" 
               type="radio" 
@@ -487,7 +487,7 @@ export default function Payment2() {
               onChange={(e) => setPaymentType(e.target.value)} 
             />
             <label htmlFor="paypal">💳 PayPal/Credit Card</label>
-          </fieldset>
+          </fieldset>*/}
         </form>
         
         {paymentType === "mpesa" ? (
